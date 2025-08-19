@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ElevateGen | Our Story & Mission | Forsyth County, GA</title>
+    <meta name="description" content="Learn about ElevateGen's mission to empower students through internships, mentorships, and career development opportunities in Forsyth County, Georgia.">
+    <meta name="keywords" content="ElevateGen about, student platform mission, Forsyth County GA, youth empowerment, student career development, nonprofit mission">
+    <meta name="author" content="ElevateGen">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo"><a href="index.html">ElevateGen</a></h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="about-page" class="page">
+            <section class="hero-small">
+                <div class="hero-content">
+                    <h2>About ElevateGen</h2>
+                    <p>Discover our story, mission, and the impact we're making</p>
+                </div>
+            </section>
+            
+            <section class="about-content">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h2>Our Story</h2>
+                            <p class="section-intro">ElevateGen recognizes the pressure students face to have their careers and internships mapped out, even though the steps—applications, gaining experience, and building a path forward—are often unclear. Our mission is to bridge that gap by empowering students to support one another with guidance, resources, and access to opportunities.</p>
+                            
+                            <p>We believe that every student deserves access to the tools and connections they need to succeed. Through our platform, we're building a community where students can learn from each other, connect with mentors, and discover opportunities that align with their passions and goals.</p>
+                            
+                            <p>Our approach is simple: connect, empower, and elevate. We connect students with each other and with professionals in their fields. We empower them with knowledge, skills, and confidence. And together, we elevate the next generation of leaders.</p>
+                        </div>
+                        <div class="about-image">
+                            <div class="team-showcase-about">
+                                <img src="images/Team.jpg" alt="ElevateGen Team - Student Leaders Making a Difference" class="about-team-photo">
+                                <div class="team-stats">
+                                    <h3>Our Impact</h3>
+                                    <ul>
+                                        <li>Kickoff meeting drew strong student turnout</li>
+                                        <li>Built connections with impactful mentors</li>
+                                        <li>Supported students in landing internships</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/elevate_gen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="team.html">Team</a>
+                    <a href="events.html">Events</a>
+                    <a href="press.html">Press</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p>© 2025 ElevateGen. All rights reserved.</p>
+                <p>Empowering communities, creating lasting change.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Header background on scroll
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 50) {
+                header.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(30, 64, 175, 0.98))';
+                header.style.backdropFilter = 'blur(20px)';
+                header.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.2)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(30, 64, 175, 0.95))';
+                header.style.backdropFilter = 'blur(15px)';
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            }
+            
+            if (currentScrollY > lastScrollY && currentScrollY > 300) {
+                header.style.transform = 'translateY(-100%)';
+                header.style.opacity = '0.95';
+            } else {
+                header.style.transform = 'translateY(0)';
+                header.style.opacity = '1';
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // Fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

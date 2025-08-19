@@ -102,61 +102,19 @@
         }
     }
     </script>
-
-    <!-- Additional SEO Schema for Press Page -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Press & Media Coverage",
-        "description": "Latest media coverage and press releases about ElevateGen's student-led platform for internships and career development in Forsyth County, Georgia.",
-        "url": "https://elevategen.org/press",
-        "mainEntity": {
-            "@type": "ItemList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                        "@type": "Article",
-                        "headline": "Elevate Gen || HIGH SCHOOL STUDENTS || MANA TV #students",
-                        "datePublished": "2025-07-01",
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "MANA TV"
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                        "@type": "Article",
-                        "headline": "Student-Led Platform ElevateGen Launched to Empower Future Leaders in Forsyth County",
-                        "datePublished": "2025-06-29",
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "NRI Pulse"
-                        }
-                    }
-                }
-            ]
-        }
-    }
-    </script>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-container">
-                <h1 class="logo" onclick="showPage('home')">ElevateGen</h1>
+                <h1 class="logo">ElevateGen</h1>
                 <ul class="nav-menu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#press">Press</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -173,23 +131,22 @@
             <section class="hero" id="home">
                 <div class="hero-content">
                     <h2>Welcome to ElevateGen</h2>
-                    <p></p>
-                    <a href="#about" class="cta-button" onclick="showPage('about')">Learn More</a>
-                    <a href="#contact" class="cta-button" onclick="showPage('contact')">Get Involved</a>
+                    <p>Empowering students to build their future through internships, mentorships, and career development opportunities.</p>
+                    <a href="about.html" class="cta-button">Learn More</a>
+                    <a href="contact.html" class="cta-button">Get Involved</a>
                 </div>
             </section>
 
             <section class="mission-preview" id="mission">
                 <div class="container">
                     <h2>Our Mission</h2>
-                    <p class="section-intro">We're here to help students explore careers, build real experience, and grow with confidence. Through hands-on opportunities like internships, mentorships, and workshops, our goal is to make the future feel less overwhelming, and more achievable.
-                    </p>
+                    <p class="section-intro">We're here to help students explore careers, build real experience, and grow with confidence. Through hands-on opportunities like internships, mentorships, and workshops, our goal is to make the future feel less overwhelming, and more achievable.</p>
                     <div class="team-showcase">
                         <div class="team-showcase-content fade-in">
                             <img src="images/Team.jpg" alt="ElevateGen Team" class="team-showcase-image">
                             <div class="showcase-buttons">
-                                <a href="#about" class="cta-button" onclick="showPage('about')">Learn More</a>
-                                <a href="#team" class="cta-button" onclick="showPage('team')">Meet Our Team</a>
+                                <a href="about.html" class="cta-button">Learn More</a>
+                                <a href="team.html" class="cta-button">Meet Our Team</a>
                             </div>
                         </div>
                     </div>
@@ -198,423 +155,12 @@
 
             <section class="get-involved">
                 <div class="container">
-                    <h2>Ready to Make a Difference?</h2>
-                    <p class="section-intro"> Join us in shaping the next generation of leaders </p>
+                    <h2>Get Involved</h2>
+                    <p class="section-intro">There are many ways to support our mission and help students succeed. Whether you're a student looking for opportunities or someone who wants to make a difference, we'd love to hear from you.</p>
                     <div class="involvement-options">
-                        <a href="#contact" class="cta-button" onclick="showPage('contact')">Volunteer</a>
-                        <a href="#contact" class="cta-button" onclick="showPage('contact')">Donate</a>
-                        <a href="#contact" class="cta-button" onclick="showPage('contact')">Partner</a>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- About Page -->
-        <div id="about-page" class="page" style="display: none;">
-            <section class="hero-small">
-                <div class="hero-content">
-                    <h2>About ElevateGen</h2>
-                    <p>Discover our story, mission, and the impact we're making</p>
-                </div>
-            </section>
-            
-            <section class="about-content">
-                <div class="container">
-                    <div class="about-grid">
-                        <div class="about-text">
-                            <h2>Our Story</h2>
-                            <p class="section-intro">ElevateGen recognizes the pressure students face to have their careers and internships mapped out, even though the steps—applications, gaining experience, and building a path forward—are often unclear. Our mission is to bridge that gap by empowering students to support one another with guidance, resources, and access to opportunities.</p>
-                            
-                            <p>We believe that every student deserves access to the tools and connections they need to succeed. Through our platform, we're building a community where students can learn from each other, connect with mentors, and discover opportunities that align with their passions and goals.</p>
-                            
-                            <p>Our approach is simple: connect, empower, and elevate. We connect students with each other and with professionals in their fields. We empower them with knowledge, skills, and confidence. And together, we elevate the next generation of leaders.</p>
-                        </div>
-                        <div class="about-image">
-                            <div class="team-showcase-about">
-                                <img src="images/Team.jpg" alt="ElevateGen Team - Student Leaders Making a Difference" class="about-team-photo">
-                                <div class="team-stats">
-                                    <h3>Our Impact</h3>
-                                    <ul>
-                                        <li>Kickoff meeting drew strong student turnout</li>
-                                        <li>Built connections with impactful mentors</li>
-                                        <li>Supported students in landing internships</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Events Page -->
-        <div id="events-page" class="page" style="display: none;">
-            <section class="hero-small">
-                <div class="hero-content">
-                    <h2>Events & Activities</h2>
-                    <p>Discover the exciting events and programs that make ElevateGen a dynamic platform for student growth</p>
-                </div>
-            </section>
-
-            <section class="events-content">
-                <div class="container">
-                    <h2>Our Events</h2>
-                    <div class="events-grid">
-                        <article class="event-item fade-in featured-event">
-                            <div class="event-header">
-                                <div class="event-date">
-                                    <span class="day">01</span>
-                                    <span class="month">JUL</span>
-                                    <span class="year">2025</span>
-                                </div>
-                                <div class="event-status">
-                                    <span class="status-badge completed">Completed</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <h3>ElevateGen Official Kick-Off Event</h3>
-                                <p class="event-description">The grand launch of ElevateGen, marking the beginning of our mission to empower students through internships, mentorships, and career development opportunities. This landmark event brought together students, professionals, and community leaders to celebrate the future of youth empowerment.</p>
-                                <div class="event-details">
-                                    <div class="event-detail">
-                                        <span class="icon">📍</span>
-                                        <span>Forsyth County, Georgia</span>
-                                    </div>
-                                    <div class="event-detail">
-                                        <span class="icon">🕒</span>
-                                        <span>Evening Event</span>
-                                    </div>
-                                    <div class="event-detail">
-                                        <span class="icon">👥</span>
-                                        <span>Strong Student Turnout</span>
-                                    </div>
-                                </div>
-                                <div class="event-highlights">
-                                    <h4>Event Highlights:</h4>
-                                    <ul>
-                                        <li>Official platform launch and mission presentation</li>
-                                        <li>Networking with community professionals and mentors</li>
-                                        <li>Interactive sessions on career development</li>
-                                        <li>Student testimonials and success stories</li>
-                                        <li>Partnership announcements and future plans</li>
-                                    </ul>
-                                </div>
-                                <div class="event-impact">
-                                    <h4>Impact & Results:</h4>
-                                    <ul>
-                                        <li>Established connections with impactful mentors</li>
-                                        <li>Built strong foundation for student programs</li>
-                                        <li>Generated community interest and support</li>
-                                        <li>Set the stage for future events and initiatives</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-
-                    <div class="event-gallery fade-in">
-                        <h3>Event Photo Gallery</h3>
-                        <p>Relive the excitement and energy of our historic kickoff event through these amazing photos!</p>
-                        <div class="photo-grid">
-                            <div class="photo-item">
-                                <img src="images/events/PIC-1.jpg" alt="ElevateGen Kickoff Event - Opening Ceremony" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-2.jpg" alt="ElevateGen Kickoff Event - Team Presentation" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-3.jpg" alt="ElevateGen Kickoff Event - Student Engagement" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-4.jpg" alt="ElevateGen Kickoff Event - Networking Session" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-5.jpg" alt="ElevateGen Kickoff Event - Community Leaders" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-6.jpg" alt="ElevateGen Kickoff Event - Interactive Activities" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-7.jpg" alt="ElevateGen Kickoff Event - Student Success Stories" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-8.jpg" alt="ElevateGen Kickoff Event - Partnership Announcements" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-9.jpg" alt="ElevateGen Kickoff Event - Future Vision" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-10.jpg" alt="ElevateGen Kickoff Event - Community Celebration" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-11.jpg" alt="ElevateGen Kickoff Event - Student Leadership" loading="lazy">
-                            </div>
-                            <div class="photo-item">
-                                <img src="images/events/PIC-12.jpg" alt="ElevateGen Kickoff Event - Professional Development" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="gallery-cta">
-                            <p>📸 <strong>100+ Photos Captured!</strong> The kickoff event was a massive success with incredible community turnout and engagement.</p>
-                            <button class="cta-button" onclick="loadMorePhotos()">Load More Photos</button>
-                        </div>
-                    </div>
-
-
-                    </div>
-
-                    <div class="events-cta fade-in">
-                        <h3>Get Involved in Our Events</h3>
-                        <p>Stay updated with upcoming events and opportunities to grow with ElevateGen</p>
-                        <div class="cta-buttons">
-                            <a href="#contact" class="cta-button" onclick="showPage('contact')">Join Our Events</a>
-                            <a href="mailto:info@elevategen.org" class="cta-button secondary">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Team Page -->
-        <div id="team-page" class="page" style="display: none;">
-            <section class="hero-small">
-                <div class="hero-content">
-                    <h2>Our Team</h2>
-                    <p>Meet the passionate individuals driving positive change</p>
-                </div>
-            </section>
-
-            <section class="team-content">
-                <div class="container">
-                    <div class="team-grid">
-                        <div class="team-member fade-in">
-                            <div class="member-photo">
-                                <img src="images/saisri.jpg" alt="Saisri Akarapu - President of ElevateGen" class="team-photo">
-                            </div>
-                            <h3>Saisri Akarapu</h3>
-                            <p class="role">President</p>
-                            <p>Hey! I'm Siri and I'm your Elevate Gen president! In my free time I enjoy playing badminton and listening to Drake. Very excited for what's yet to come!</p>
-                        </div>
-                        <div class="team-member fade-in">
-                            <div class="member-photo">
-                                <img src="images/Leanne.jpg" alt="Leanne Mathews" class="team-photo">
-                            </div>
-                            <h3>Leanne Mathews </h3>
-                            <p class="role">Vice president</p>
-                            <p> My name is Leanne Mathews, and I'm a junior at Lambert High School. I'm the Vice President of Elevate Gen, where I help lead meetings and events and keep them running smoothly. I'm interested in pursuing a career in animation or graphic design. </p>
-                        </div>
-                        <div class="team-member fade-in">
-                            <div class="member-photo">
-                                <img src="images/saisehari.jpg" alt="Sai Sehari Kamidi" class="team-photo">
-                            </div>
-                            <h3>Sai Sehari Kamidi</h3>
-                            <p class="role">Secretary</p>
-                            <p> My name is Sai Sehari Kamidi, and I'm a junior at North Forsyth High School. I serve as the Secretary of Elevate Gen, where I support organizational tasks and communication efforts. I have a strong passion for art and am pursuing a career in veterinary science. </p>
-                        </div>
-                        <div class="team-member fade-in">
-                            <div class="member-photo">
-                                <img src="images/Mirabel.jpg" alt="Mirabel Horn" class="team-photo">
-                            </div>
-                            <h3>Mirabel Horn</h3>
-                            <p class="role">Treasurer</p>
-                            <p> My name is Mirabel and I am the treasurer. I am a 11th grader at Lambert High School. </p>
-                        </div>
-                        <div class="team-member fade-in">
-                            <div class="member-photo">
-                                <img src="images/Viva.jpg" alt="Viva Mathew" class="team-photo">
-                            </div>
-                            <h3>Viva Mathew</h3>
-                            <p class="role">Marketing Director</p>
-                            <p> Hi everyone! My name is Viva Mathew and I am the 2025-2026 Marketing Director—so know any time you're emailing, I'm probably the one you're talking to! I enjoy baking, volunteering, and journaling in my free time. I am also involved in other organizations like NHS, Yearbook, and FBLA. I am so excited to work with all of you at ElevateGen this year! </p>
-                        </div>
-                        <div class="team-member fade-in">
-                            <div class="member-photo">
-                                <img src="images/Jay.jpg" alt="Jaytirth Joshi" class="team-photo">
-                            </div>
-                            <h3>Jaytirth Joshi </h3>
-                            <p class="role">CEO at HealthSathi</p>
-                            <p>High school entrepreneur passionate about leveraging AI to solve real-world challenges. As founder and CEO of HealthSathi, I've built an award-winning platform that democratizes healthcare by making complex medical reports accessible to everyone. My international experience across India, China, and the US fuels my mission to create technology that truly makes a difference in people's lives.</p>
-                        </div>
-                        <div class="team-member fade-in">
-                            <div class="member-photo">
-                                <img src="images/Angela.jpg" alt="Angela Leo" class="team-photo">
-                            </div>
-                            <h3>Angela Leo</h3>
-                            <p class="role">Media Director</p>
-                            <p> I'm Angela Leo, Elevate Gen's media director. I create digital content that helps us inform, inspire and connect with students. With a background in journalism, design, and leadership in several student led initiatives, I'm passionate about creating content that makes an impact. </p>
-                        </div>
-                        <div class="team-member fade-in">
-                            <div class="member-photo">
-                                <img src="images/Aneesh.jpg" alt="Aneesh Miryala" class="team-photo">
-                            </div>
-                            <h3>Aneesh Miryala</h3>
-                            <p class="role">Event Management Director</p>
-                            <p> I'm am a college student majoring in Cell and Molecular Biology with a strong passion for science, service, and leadership. I'm deeply connected to my South Indian roots and always looking for ways to make a meaningful impact in both my community and future career.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Press Page -->
-        <div id="press-page" class="page" style="display: none;">
-            <section class="hero-small">
-                <div class="hero-content">
-                    <h2>Press & Media</h2>
-                    <p>Stay updated with the latest news and media coverage about ElevateGen</p>
-                </div>
-            </section>
-
-            <section class="press-content">
-                <div class="container">
-                    <div class="press-contact-section fade-in">
-                        <h3>Press & Media Inquiries</h3>
-                        <p>For press releases, media interviews, or partnership opportunities, please contact our media team.</p>
-                        <div class="press-contact-info">
-                            <a href="mailto:info@elevategen.org" class="press-contact-button">
-                                📧 info@elevategen.org
-                            </a>
-                        </div>
-                    </div>
-
-                    <h2>Media Coverage</h2>
-                    <div class="press-grid">
-                        <article class="press-item fade-in">
-                            <div class="press-meta">
-                                <span class="press-date">July 1, 2025</span>
-                                <span class="press-source">MANA TV</span>
-                            </div>
-                            <h3>Elevate Gen || HIGH SCHOOL STUDENTS || MANA TV #students</h3>
-                            <p class="press-excerpt">Watch ElevateGen's feature on MANA TV, showcasing how high school students are leading the way in community development and youth empowerment through innovative programs and mentorship opportunities.</p>
-                            <div class="press-actions">
-                                <a href="https://www.youtube.com/watch?v=UfLrmZFdfu8" target="_blank" rel="noopener noreferrer" class="cta-button">Watch on YouTube</a>
-                            </div>
-                        </article>
-
-                        <article class="press-item fade-in">
-                            <div class="press-meta">
-                                <span class="press-date">July 1, 2025</span>
-                                <span class="press-source">TV5 Digital</span>
-                            </div>
-                            <h3>Elevate Gen || HIGH SCHOOL STUDENTS | TV5 Digital</h3>
-                            <p class="press-excerpt">Discover how ElevateGen is revolutionizing student leadership and career development on TV5 Digital, featuring interviews with our student leaders and insights into our mission to empower the next generation.</p>
-                            <div class="press-actions">
-                                <a href="https://www.youtube.com/watch?v=wBVNJO_3jgc" target="_blank" rel="noopener noreferrer" class="cta-button">Watch on YouTube</a>
-                            </div>
-                        </article>
-
-                        <article class="press-item fade-in">
-                            <div class="press-meta">
-                                <span class="press-date">June 29, 2025</span>
-                                <span class="press-source">NRI Pulse</span>
-                            </div>
-                            <h3>Student-Led Platform ElevateGen Launched to Empower Future Leaders in Forsyth County</h3>
-                            <p class="press-excerpt">A dynamic new student-led initiative, ElevateGen, has launched in Forsyth County with the goal of helping students turn ambition into action. Created by a group of young leaders in partnership with Idealogy Media, ElevateGen is a platform designed to bridge the gap between education and real-world experience for high school and college students, as well as early-career seekers.</p>
-                            <div class="press-actions">
-                                <a href="https://nripulse.com/student-led-platform-elevategen-launched-to-empower-future-leaders-in-forsyth-county/#google_vignette" target="_blank" rel="noopener noreferrer" class="cta-button">Read Full Article</a>
-                            </div>
-                        </article>
-
-                        <article class="press-item fade-in">
-                            <div class="press-meta">
-                                <span class="press-date">June 29, 2025</span>
-                                <span class="press-source">Atlanta Dunia</span>
-                            </div>
-                            <h3>Career GPS: How ElevateGen Helps Students Navigate What's Next</h3>
-                            <p class="press-excerpt">A group of young leaders in Forsyth County have started ElevateGen, a new student-led platform designed to assist high school students, college students, and early career seekers in developing professional skills, exploring career paths, and gaining real-world experience in an era where students are expected to navigate their future without the necessary tools or experience.</p>
-                            <div class="press-actions">
-                                <a href="https://atlantadunia.com/dunia/Newsdetail.aspx?q=1504" target="_blank" rel="noopener noreferrer" class="cta-button">Read Full Article</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="social-media-section fade-in">
-                        <h3>Follow Our Journey</h3>
-                        <p>Stay connected with ElevateGen on social media for the latest updates, events, and opportunities.</p>
-                        <div class="social-media-links">
-                            <a href="https://www.instagram.com/elevate_gen/" target="_blank" rel="noopener noreferrer" class="social-media-button instagram">
-                                📷 Follow @elevate_gen on Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-                </div>
-            </section>
-        </div>
-
-        <!-- Contact Page -->
-        <div id="contact-page" class="page" style="display: none;">
-            <section class="hero-small">
-                <div class="hero-content">
-                    <h2>Contact Us</h2>
-                    <p>Get in touch to learn more about our work and how you can get involved</p>
-                </div>
-            </section>
-
-            <section class="contact-content">
-                <div class="container">
-                    <div class="contact-grid">
-                        <div class="contact-info-section">
-                            <h2>Get In Touch</h2>
-                            <div class="contact-info">
-                                <div class="contact-item fade-in">
-                                    <h3>📍 Office Address</h3>
-                                    <p>123 Community Street<br>Atlanta, GA 30309</p>
-                                </div>
-                                <div class="contact-item fade-in">
-                                    <h3>📞 Phone</h3>
-                                    <p><a href="tel:+14045550123" style="color: #333; text-decoration: none;">(404) 555-0123</a></p>
-                                </div>
-                                <div class="contact-item fade-in">
-                                    <h3>✉️ Email</h3>
-                                    <p><a href="mailto:info@elevategen.org" style="color: #333; text-decoration: none;">info@elevategen.org</a></p>
-                                </div>
-                                <div class="contact-item fade-in">
-                                    <h3>🕒 Office Hours</h3>
-                                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-form-section">
-                            <h2>Send Us a Message</h2>
-                            <div class="loading" id="loading">
-                                <div class="spinner"></div>
-                                <p>Sending your message...</p>
-                            </div>
-                            <form class="contact-form" id="contactForm">
-                                <div class="form-group">
-                                    <label for="name">Full Name *</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                                <div class="form-group">
-                                    <label for="interest">I'm Interested In</label>
-                                    <select id="interest" name="interest">
-                                        <option value="">Select an option</option>
-                                        <option value="volunteering">Volunteering</option>
-                                        <option value="donating">Making a Donation</option>
-                                        <option value="partnership">Partnership Opportunities</option>
-                                        <option value="programs">Learning About Programs</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" name="subject">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message *</label>
-                                    <textarea id="message" name="message" rows="6" required placeholder="Tell us how you'd like to get involved or any questions you have..."></textarea>
-                                </div>
-                                <button type="submit" class="submit-btn cta-button">Send Message</button>
-                            </form>
-                        </div>
+                        <a href="contact.html" class="cta-button">Volunteer</a>
+                        <a href="contact.html" class="cta-button">Donate</a>
+                        <a href="contact.html" class="cta-button">Partner</a>
                     </div>
                 </div>
             </section>
@@ -624,98 +170,23 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div>
-                    <p>&copy; 2025 <a href="https://elevategen.org" style="color: white; text-decoration: none;">ElevateGen.org</a>. All rights reserved.</p>
-                    <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Empowering communities, creating lasting change.</p>
-                    <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.6;">Student-led platform in Forsyth County, Georgia</p>
-                </div>
                 <div class="social-links">
-                    <a href="#" title="Facebook">📘</a>
-                    <a href="#" title="Twitter">🐦</a>
-                    <a href="https://www.instagram.com/elevate_gen/" target="_blank" rel="noopener noreferrer" title="Instagram">📷</a>
-                    <a href="#" title="LinkedIn">💼</a>
-                    <a href="mailto:info@elevategen.org" title="Email">✉️</a>
+                    <a href="https://www.instagram.com/elevate_gen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
                 </div>
                 <div class="footer-links">
-                    <a href="#events" onclick="showPage('events')" title="Events & Activities">Events</a>
-                    <a href="#press" onclick="showPage('press')" title="Press & Media">Press</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Team</a>
+                    <a href="events.html">Events</a>
+                    <a href="press.html">Press</a>
+                    <a href="contact.html">Contact</a>
                 </div>
+                <p>© 2025 ElevateGen. All rights reserved.</p>
+                <p>Empowering communities, creating lasting change.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Global variables
-        let currentPage = 'home';
-        const pages = {
-            'home': document.querySelector('#home-page'),
-            'about': document.querySelector('#about-page'),
-            'team': document.querySelector('#team-page'),
-            'events': document.querySelector('#events-page'),
-            'press': document.querySelector('#press-page'),
-            'contact': document.querySelector('#contact-page')
-        };
-
-        // Page navigation system
-        function showPage(pageName) {
-            console.log('Attempting to show page:', pageName);
-            
-            if (!pages[pageName]) {
-                console.error('Page not found:', pageName);
-                return;
-            }
-            
-            console.log('Page element found:', pages[pageName]);
-            
-            // Hide all pages
-            Object.keys(pages).forEach(key => {
-                if (pages[key]) {
-                    pages[key].style.display = 'none';
-                    console.log('Hiding page:', key);
-                }
-            });
-            
-            // Show selected page
-            pages[pageName].style.display = 'block';
-            console.log('Showing page:', pageName);
-            
-            // Update active nav link
-            document.querySelectorAll('.nav-menu a').forEach(link => {
-                link.classList.remove('active');
-            });
-            const activeLink = document.querySelector(`a[href="#${pageName}"]`);
-            if (activeLink) {
-                activeLink.classList.add('active');
-                console.log('Updated active link:', pageName);
-            }
-            
-            currentPage = pageName;
-            
-            // Close mobile menu if open
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-            if (hamburger && navMenu) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            }
-            
-            // Scroll to top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            
-            // Trigger fade-in animations for new page
-            setTimeout(() => {
-                const fadeElements = pages[pageName].querySelectorAll('.fade-in');
-                console.log('Found fade elements:', fadeElements.length);
-                fadeElements.forEach((element, index) => {
-                    setTimeout(() => {
-                        element.classList.add('visible');
-                    }, index * 100);
-                });
-            }, 100);
-        }
-
-        // Initialize page
-        document.addEventListener('DOMContentLoaded', function() {
             // Mobile menu toggle
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
@@ -755,74 +226,13 @@
                 lastScrollY = currentScrollY;
             });
 
-            // Navigation event listeners
-            document.querySelectorAll('.nav-menu a').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const page = this.getAttribute('href').substring(1);
-                    showPage(page);
-                });
-            });
-
-            // Contact form handling
-            const contactForm = document.getElementById('contactForm');
-            const loading = document.getElementById('loading');
-            
-            if (contactForm && loading) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    const formData = new FormData(contactForm);
-                    const name = formData.get('name');
-                    const email = formData.get('email');
-                    const message = formData.get('message');
-                    
-                    // Basic validation
-                    if (!name || !email || !message) {
-                        alert('Please fill in all required fields.');
-                        return;
-                    }
-                    
-                    // Email validation
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!emailRegex.test(email)) {
-                        alert('Please enter a valid email address.');
-                        return;
-                    }
-                    
-                    // Show loading animation
-                    contactForm.style.display = 'none';
-                    loading.style.display = 'block';
-                    
-                    // Simulate form submission
-                    setTimeout(() => {
-                        loading.style.display = 'none';
-                        contactForm.style.display = 'block';
-                        
-                        // Success message
-                        const successDiv = document.createElement('div');
-                        successDiv.innerHTML = `
-                            <div style="background: linear-gradient(135deg, #10b981, #34d399); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-bottom: 2rem;">
-                                <h3 style="margin-bottom: 1rem;">✅ Message Sent Successfully!</h3>
-                                <p>Thank you for reaching out, ${name}! We'll get back to you within 24 hours.</p>
-                                <button onclick="this.parentElement.parentElement.remove()" style="background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 5px; margin-top: 1rem; cursor: pointer;">Close</button>
-                            </div>
-                        `;
-                        contactForm.parentNode.insertBefore(successDiv, contactForm);
-                        
-                        // Reset form
-                        contactForm.reset();
-                    }, 2000);
-                });
-            }
-
-            // Intersection Observer for animations
+        // Fade-in animations
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
 
-            const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
@@ -830,206 +240,7 @@
                 });
             }, observerOptions);
 
-            // Observe all fade-in elements
-            document.querySelectorAll('.fade-in').forEach(el => {
-                observer.observe(el);
-            });
-
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    const href = this.getAttribute('href');
-                    if (href.startsWith('#') && href.length > 1) {
-                        const targetPage = href.substring(1);
-                        if (pages[targetPage]) {
-                            e.preventDefault();
-                            showPage(targetPage);
-                        }
-                    }
-                });
-            });
-
-            // Keyboard navigation
-            document.addEventListener('keydown', function(e) {
-                if (e.altKey) {
-                    switch(e.key) {
-                        case '1':
-                            e.preventDefault();
-                            showPage('home');
-                            break;
-                        case '2':
-                            e.preventDefault();
-                            showPage('about');
-                            break;
-                        case '3':
-                            e.preventDefault();
-                            showPage('team');
-                            break;
-                        case '4':
-                            e.preventDefault();
-                            showPage('events');
-                            break;
-                        case '5':
-                            e.preventDefault();
-                            showPage('press');
-                            break;
-                        case '6':
-                            e.preventDefault();
-                            showPage('contact');
-                            break;
-                    }
-                }
-            });
-
-            // Dynamic year in footer
-            const currentYear = new Date().getFullYear();
-            const footerText = document.querySelector('footer p');
-            if (footerText) {
-                footerText.innerHTML = footerText.innerHTML.replace('2025', currentYear);
-            }
-
-            // Add some interactive effects
-            document.querySelectorAll('.cta-button').forEach(button => {
-                button.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-2px) scale(1.05)';
-                });
-                
-                button.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
-
-            // Project cards hover effect
-            document.querySelectorAll('.project-card, .team-member').forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-15px) scale(1.02)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
-
-            // Add loading states for buttons
-            document.querySelectorAll('.cta-button:not(.submit-btn)').forEach(button => {
-                button.addEventListener('click', function() {
-                    const originalText = this.textContent;
-                    this.textContent = 'Loading...';
-                    this.style.opacity = '0.7';
-                    
-                    setTimeout(() => {
-                        this.textContent = originalText;
-                        this.style.opacity = '1';
-                    }, 500);
-                });
-            });
-
-            // Initialize first page
-            showPage('home');
-            
-            // Add welcome animation
-            setTimeout(() => {
-                document.querySelectorAll('#home-page .fade-in').forEach((el, index) => {
-                    setTimeout(() => {
-                        el.classList.add('visible');
-                    }, index * 200);
-                });
-            }, 500);
-
-            // Console welcome message
-            console.log('🌟 ElevateGen website loaded successfully! 🌟');
-        });
-
-        // Utility functions
-        function formatPhoneNumber(input) {
-            const value = input.value.replace(/\D/g, '');
-            const formattedValue = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
-            if (value.length <= 10) {
-                input.value = formattedValue;
-            }
-        }
-
-        // Add phone formatting
-        document.addEventListener('DOMContentLoaded', function() {
-            const phoneInput = document.getElementById('phone');
-            if (phoneInput) {
-                phoneInput.addEventListener('input', function() {
-                    formatPhoneNumber(this);
-                });
-            }
-        });
-
-        // Add form validation styling
-        document.addEventListener('DOMContentLoaded', function() {
-            const inputs = document.querySelectorAll('input, textarea, select');
-            inputs.forEach(input => {
-                input.addEventListener('blur', function() {
-                    if (this.hasAttribute('required') && !this.value.trim()) {
-                        this.style.borderColor = '#ef4444';
-                        this.style.boxShadow = '0 0 0 3px rgba(239, 68, 68, 0.1)';
-                    } else {
-                        this.style.borderColor = 'rgba(59, 130, 246, 0.3)';
-                        this.style.boxShadow = 'none';
-                    }
-                });
-                
-                input.addEventListener('focus', function() {
-                    this.style.borderColor = '#3b82f6';
-                    this.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.1)';
-                });
-            });
-        });
-
-        // Add error handling for missing elements
-        window.addEventListener('error', function(e) {
-            console.warn('Non-critical error caught:', e.message);
-        });
-
-        // Load more photos function
-        function loadMorePhotos() {
-            const photoGrid = document.querySelector('.photo-grid');
-            const currentPhotos = photoGrid.children.length;
-            const totalPhotos = 100;
-            
-            if (currentPhotos >= totalPhotos) {
-                alert('All photos are already loaded!');
-                return;
-            }
-            
-            // Load next batch of photos (12 more)
-            const photosToLoad = Math.min(12, totalPhotos - currentPhotos);
-            const startIndex = currentPhotos + 1;
-            
-            for (let i = startIndex; i <= startIndex + photosToLoad - 1; i++) {
-                if (i <= totalPhotos) {
-                    const photoItem = document.createElement('div');
-                    photoItem.className = 'photo-item fade-in';
-                    photoItem.innerHTML = `
-                        <img src="images/events/PIC-${i}.jpg" alt="ElevateGen Kickoff Event - Photo ${i}" loading="lazy">
-                    `;
-                    photoGrid.appendChild(photoItem);
-                }
-            }
-            
-            // Update button text
-            const loadButton = document.querySelector('.gallery-cta .cta-button');
-            if (currentPhotos + photosToLoad >= totalPhotos) {
-                loadButton.textContent = 'All Photos Loaded';
-                loadButton.disabled = true;
-            } else {
-                loadButton.textContent = `Load More Photos (${totalPhotos - (currentPhotos + photosToLoad)} remaining)`;
-            }
-            
-            // Trigger fade-in animation for new photos
-            setTimeout(() => {
-                const newPhotos = photoGrid.querySelectorAll('.photo-item:not(.visible)');
-                newPhotos.forEach((photo, index) => {
-                    setTimeout(() => {
-                        photo.classList.add('visible');
-                    }, index * 100);
-                });
-            }, 100);
-        }
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>

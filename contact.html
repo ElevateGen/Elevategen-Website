@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ElevateGen | Forsyth County, GA</title>
+    <meta name="description" content="Get in touch with ElevateGen to learn more about our work and how you can get involved in empowering students through internships and career development.">
+    <meta name="keywords" content="ElevateGen contact, get involved, volunteer, donate, partner, student opportunities, Forsyth County GA">
+    <meta name="author" content="ElevateGen">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo"><a href="index.html">ElevateGen</a></h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contact-page" class="page">
+            <section class="hero-small">
+                <div class="hero-content">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch to learn more about our work and how you can get involved</p>
+                </div>
+            </section>
+
+            <section class="contact-content">
+                <div class="container">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p class="section-intro">We'd love to hear from you! Whether you're a student looking for opportunities, a professional interested in mentoring, or someone who wants to support our mission, we're here to help.</p>
+                        
+                        <div class="contact-item">
+                            <h3>📞 Phone</h3>
+                            <p><a href="tel:+14045550123">(404) 555-0123</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>✉️ Email</h3>
+                            <p><a href="mailto:info@elevategen.org">info@elevategen.org</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>🕒 Office Hours</h3>
+                            <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM<br>
+                            <strong>Saturday:</strong> 10:00 AM - 2:00 PM<br>
+                            <strong>Sunday:</strong> Closed</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>📍 Location</h3>
+                            <p>Forsyth County, Georgia</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>📱 Social Media</h3>
+                            <p><a href="https://www.instagram.com/elevate_gen/" target="_blank" rel="noopener noreferrer">@elevate_gen on Instagram</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>⏰ Response Time</h3>
+                            <p>We typically respond within 24-48 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/elevate_gen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="team.html">Team</a>
+                    <a href="events.html">Events</a>
+                    <a href="press.html">Press</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p>© 2025 ElevateGen. All rights reserved.</p>
+                <p>Empowering communities, creating lasting change.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Header background on scroll
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 50) {
+                header.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(30, 64, 175, 0.98))';
+                header.style.backdropFilter = 'blur(20px)';
+                header.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.2)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(30, 64, 175, 0.95))';
+                header.style.backdropFilter = 'blur(15px)';
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            }
+            
+            if (currentScrollY > lastScrollY && currentScrollY > 300) {
+                header.style.transform = 'translateY(-100%)';
+                header.style.opacity = '0.95';
+            } else {
+                header.style.transform = 'translateY(0)';
+                header.style.opacity = '1';
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // Fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
