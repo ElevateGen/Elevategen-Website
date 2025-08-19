@@ -298,17 +298,17 @@
                                         <li>Partnership announcements and future plans</li>
                                     </ul>
                                 </div>
-                                                            <div class="event-impact">
-                                <h4>Impact & Results:</h4>
-                                <ul>
-                                    <li>Established connections with impactful mentors</li>
-                                    <li>Built strong foundation for student programs</li>
-                                    <li>Generated community interest and support</li>
-                                    <li>Set the stage for future events and initiatives</li>
-                                </ul>
+                                <div class="event-impact">
+                                    <h4>Impact & Results:</h4>
+                                    <ul>
+                                        <li>Established connections with impactful mentors</li>
+                                        <li>Built strong foundation for student programs</li>
+                                        <li>Generated community interest and support</li>
+                                        <li>Set the stage for future events and initiatives</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
 
                     <div class="event-gallery fade-in">
                         <h3>Event Photo Gallery</h3>
@@ -658,17 +658,26 @@
 
         // Page navigation system
         function showPage(pageName) {
-            if (!pages[pageName]) return;
+            console.log('Attempting to show page:', pageName);
+            
+            if (!pages[pageName]) {
+                console.error('Page not found:', pageName);
+                return;
+            }
+            
+            console.log('Page element found:', pages[pageName]);
             
             // Hide all pages
             Object.keys(pages).forEach(key => {
                 if (pages[key]) {
                     pages[key].style.display = 'none';
+                    console.log('Hiding page:', key);
                 }
             });
             
             // Show selected page
             pages[pageName].style.display = 'block';
+            console.log('Showing page:', pageName);
             
             // Update active nav link
             document.querySelectorAll('.nav-menu a').forEach(link => {
@@ -677,6 +686,7 @@
             const activeLink = document.querySelector(`a[href="#${pageName}"]`);
             if (activeLink) {
                 activeLink.classList.add('active');
+                console.log('Updated active link:', pageName);
             }
             
             currentPage = pageName;
@@ -695,6 +705,7 @@
             // Trigger fade-in animations for new page
             setTimeout(() => {
                 const fadeElements = pages[pageName].querySelectorAll('.fade-in');
+                console.log('Found fade elements:', fadeElements.length);
                 fadeElements.forEach((element, index) => {
                     setTimeout(() => {
                         element.classList.add('visible');
