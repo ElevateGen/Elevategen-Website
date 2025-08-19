@@ -438,6 +438,73 @@ h2 {
     line-height: 1.8;
 }
 
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-showcase-about {
+    text-align: center;
+    max-width: 100%;
+}
+
+.about-team-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.about-team-photo:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.team-stats {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: left;
+}
+
+.team-stats h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.team-stats ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team-stats ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 2rem;
+    line-height: 1.6;
+}
+
+.team-stats ul li:before {
+    content: "✓";
+    color: #10b981;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
 .image-placeholder {
     background: linear-gradient(135deg, #3b82f6, #60a5fa);
     color: white;
@@ -470,6 +537,70 @@ h2 {
     position: absolute;
     left: 0;
     font-size: 1.2rem;
+}
+
+/* Mobile responsiveness for about page */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .about-text {
+        order: 1;
+    }
+    
+    .about-image {
+        order: 2;
+    }
+    
+    .about-team-photo {
+        max-width: 100%;
+        margin: 0 0.5rem 1.5rem 0.5rem;
+    }
+    
+    .team-stats {
+        margin: 0 0.5rem;
+        padding: 1.5rem;
+    }
+    
+    .team-stats h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .team-stats ul li {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-grid {
+        gap: 1.5rem;
+    }
+    
+    .about-team-photo {
+        margin: 0 0.25rem 1.25rem 0.25rem;
+    }
+    
+    .team-stats {
+        margin: 0 0.25rem;
+        padding: 1.25rem;
+    }
+    
+    .team-stats h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .team-stats ul li {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+        padding-left: 1.25rem;
+    }
 }
 
 /* ==========================================================================
