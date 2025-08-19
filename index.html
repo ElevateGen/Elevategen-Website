@@ -3,643 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElevateGen - Elevating Communities</title>
-    <meta name="description" content="ElevateGen is dedicated to empowering communities through innovative programs and sustainable solutions.">
-    <meta name="keywords" content="nonprofit, community development, social impact, volunteering">
+    <title>ElevateGen | Student-Led Platform for Internships & Career Development | Forsyth County, GA</title>
+    <meta name="description" content="ElevateGen connects high school & college students with internships, mentorships & career opportunities in Forsyth County, GA. Join our student-led platform for professional growth.">
+    <meta name="keywords" content="ElevateGen, student internships, Forsyth County GA, high school mentorships, college career development, Atlanta student opportunities, youth leadership, community service, nonprofit internships, Georgia student platform, career building, professional development, student networking, Forsyth County internships, Atlanta area students, youth empowerment, student career guidance, internship opportunities, mentorship programs, career workshops, resume building, interview preparation, student organizations, Georgia youth development">
+    <meta name="author" content="ElevateGen">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="US-GA">
+    <meta name="geo.placename" content="Forsyth County, Georgia">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elevategen.org/">
+    <meta property="og:title" content="ElevateGen - Empowering Future Leaders">
+    <meta property="og:description" content="Student-led platform connecting students with internships, mentorships, and career-building opportunities in Forsyth County, GA.">
+    <meta property="og:image" content="https://elevategen.org/images/Team.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://elevategen.org/">
+    <meta property="twitter:title" content="ElevateGen - Empowering Future Leaders">
+    <meta property="twitter:description" content="Student-led platform connecting students with internships, mentorships, and career-building opportunities in Forsyth County, GA.">
+    <meta property="twitter:image" content="https://elevategen.org/images/Team.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elevategen.org/">
+    
+    <!-- Additional SEO Links -->
+    <link rel="alternate" type="application/rss+xml" title="ElevateGen News" href="https://elevategen.org/feed.xml">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://elevategen.org/sitemap.xml">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://www.instagram.com">
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="dns-prefetch" href="https://nripulse.com">
+    <link rel="dns-prefetch" href="https://atlantadunia.com">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        header {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            background: linear-gradient(135deg, #1e40af, #3b82f6, #60a5fa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: #1e40af;
-            font-size: 1.8rem;
-            font-weight: bold;
-            letter-spacing: -0.5px;
-            cursor: pointer;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-        }
-
-        .nav-menu a:hover,
-        .nav-menu a.active {
-            color: #60a5fa;
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background: white;
-            margin: 3px 0;
-            transition: 0.3s;
-        }
-
-        /* Page Styles */
-        .page {
-            min-height: 100vh;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-
-        .hero-small {
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            position: relative;
-            margin-top: 70px;
-        }
-
-        .hero::before,
-        .hero-small::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(30, 64, 175, 0.8), rgba(59, 130, 246, 0.8));
-            z-index: -1;
-        }
-
-        .hero-content h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #3b82f6;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            animation: fadeInUp 1s ease 0.4s both;
-            font-weight: bold;
-            margin: 0 10px;
-            cursor: pointer;
-            border: none;
-            font-size: 1rem;
-        }
-
-        .cta-button:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
-        }
-
-        /* Section Styles */
-        section {
-            padding: 80px 0;
-        }
-
-        .mission-preview,
-        .get-involved,
-        .about-content,
-        .team-content,
-        .contact-content {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-        }
-
-        .section-intro {
-            text-align: center;
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            color: #666;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            color: #1e40af;
-        }
-
-        /* Team Showcase Styles */
-        .team-showcase {
-            display: flex;
-            justify-content: center;
-            margin-top: 3rem;
-        }
-
-        .team-showcase-content {
-            text-align: center;
-            max-width: 900px;
-            width: 100%;
-        }
-
-        .team-showcase-image {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            min-height: 300px;
-            object-fit: cover;
-            border-radius: 20px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin-bottom: 2rem;
-        }
-
-        .team-showcase-image:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-        }
-
-        .showcase-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        /* Mission Cards */
-        .mission-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .project-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .project-card h3 {
-            margin-bottom: 1rem;
-            color: white;
-            font-size: 1.3rem;
-        }
-
-        .project-card p {
-            margin-bottom: 1.5rem;
-            color: rgba(255, 255, 255, 0.8);
-            flex-grow: 1;
-        }
-
-        /* Get Involved Section */
-        .involvement-options {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
-
-        /* About Page Styles */
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-text p {
-            margin-bottom: 1.5rem;
-            color: #666;
-            line-height: 1.8;
-        }
-
-        .image-placeholder {
-            background: linear-gradient(135deg, #3b82f6, #60a5fa);
-            color: white;
-            padding: 3rem 2rem;
-            border-radius: 15px;
-            text-align: center;
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .image-placeholder ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 1rem 0 0 0;
-        }
-
-        .image-placeholder ul li {
-            margin-bottom: 0.8rem;
-            font-size: 1.1rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .image-placeholder ul li:before {
-            content: "•";
-            color: #60a5fa;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            font-size: 1.2rem;
-        }
-
-        /* Team Page Styles */
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .team-member {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .team-member:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .member-photo {
-            margin-bottom: 1.5rem;
-        }
-
-        .photo-placeholder {
-            width: 120px;
-            height: 120px;
-            background: linear-gradient(135deg, #3b82f6, #60a5fa);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            color: white;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        /* NEW: Team Photo Styles */
-        .team-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #3b82f6;
-            transition: transform 0.3s ease;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .team-photo:hover {
-            transform: scale(1.1);
-        }
-
-        .role {
-            color: #3b82f6;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        /* Contact Page Styles */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            margin-top: 3rem;
-        }
-
-        .contact-info {
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .contact-item h3 {
-            color: #1e40af;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-form {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.8);
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-        }
-
-        .submit-btn {
-            width: 100%;
-        }
-
-        /* Footer */
-        footer {
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .social-links a:hover {
-            background: #3b82f6;
-            transform: translateY(-2px);
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Loading Animation */
-        .loading {
-            display: none;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .spinner {
-            border: 4px solid rgba(59, 130, 246, 0.3);
-            border-left: 4px solid #3b82f6;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 1rem;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-menu {
-                position: fixed;
-                left: -100%;
-                top: 70px;
-                flex-direction: column;
-                background: rgba(0, 0, 0, 0.9);
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                padding: 2rem 0;
-            }
-
-            .nav-menu.active {
-                left: 0;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            .hamburger.active span:nth-child(2) {
-                opacity: 0;
-            }
-
-            .hamburger.active span:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
-            }
-
-            .hamburger.active span:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
-            }
-
-            .hero-content h2 {
-                font-size: 2rem;
-            }
-
-            .mission-cards {
-                grid-template-columns: 1fr;
-            }
-
-            .team-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .about-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .involvement-options {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .cta-button {
-                margin: 0.5rem;
-            }
-
-            .team-showcase-image {
-                max-width: 100%;
-                min-height: 200px;
-            }
-
-            .showcase-buttons {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-content h2 {
-                font-size: 1.5rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 15px;
-            }
-
-            .project-card,
-            .team-member {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NonProfit",
+        "name": "ElevateGen",
+        "url": "https://elevategen.org",
+        "logo": "https://elevategen.org/images/Team.jpg",
+        "description": "Student-led platform empowering high school and college students in Forsyth County, GA with internships, mentorships, and career-building opportunities.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Forsyth County",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@elevategen.org",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://www.instagram.com/elevate_gen/"
+        ],
+        "foundingDate": "2025",
+        "areaServed": {
+            "@type": "City",
+            "name": "Forsyth County, Georgia"
+        },
+        "serviceType": "Youth Development and Education",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Student Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Internship Opportunities",
+                        "description": "Connect students with real-world internship experiences"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mentorship Programs",
+                        "description": "Professional guidance and career development support"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Career Workshops",
+                        "description": "Resume building, interview preparation, and skill development"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Additional SEO Schema for Press Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Press & Media Coverage",
+        "description": "Latest media coverage and press releases about ElevateGen's student-led platform for internships and career development in Forsyth County, Georgia.",
+        "url": "https://elevategen.org/press",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "Article",
+                        "headline": "Elevate Gen || HIGH SCHOOL STUDENTS || MANA TV #students",
+                        "datePublished": "2025-07-01",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "MANA TV"
+                        }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "Article",
+                        "headline": "Student-Led Platform ElevateGen Launched to Empower Future Leaders in Forsyth County",
+                        "datePublished": "2025-06-29",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "NRI Pulse"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -650,6 +154,8 @@
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#team">Our Team</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#press">Press</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
                 <div class="hamburger">
@@ -723,14 +229,142 @@
                             <p>.</p>
                         </div>
                         <div class="about-image">
-                            <div class="image-placeholder">
-                                <h3>Community Impact</h3>
+                            <div class="team-showcase-about">
+                                <img src="images/Team.jpg" alt="ElevateGen Team - Student Leaders Making a Difference" class="about-team-photo">
+                                <div class="team-stats">
+                                    <h3>Our Impact</h3>
+                                    <ul>
+                                        <li>Kickoff meeting drew strong student turnout</li>
+                                        <li>Built connections with impactful mentors</li>
+                                        <li>Supported students in landing internships</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Events Page -->
+        <div id="events-page" class="page" style="display: none;">
+            <section class="hero-small">
+                <div class="hero-content">
+                    <h2>Events & Activities</h2>
+                    <p>Discover the exciting events and programs that make ElevateGen a dynamic platform for student growth</p>
+                </div>
+            </section>
+
+            <section class="events-content">
+                <div class="container">
+                    <h2>Our Events</h2>
+                    <div class="events-grid">
+                        <article class="event-item fade-in featured-event">
+                            <div class="event-header">
+                                <div class="event-date">
+                                    <span class="day">01</span>
+                                    <span class="month">JUL</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <div class="event-status">
+                                    <span class="status-badge completed">Completed</span>
+                                </div>
+                            </div>
+                            <div class="event-content">
+                                <h3>ElevateGen Official Kick-Off Event</h3>
+                                <p class="event-description">The grand launch of ElevateGen, marking the beginning of our mission to empower students through internships, mentorships, and career development opportunities. This landmark event brought together students, professionals, and community leaders to celebrate the future of youth empowerment.</p>
+                                <div class="event-details">
+                                    <div class="event-detail">
+                                        <span class="icon">📍</span>
+                                        <span>Forsyth County, Georgia</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <span class="icon">🕒</span>
+                                        <span>Evening Event</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <span class="icon">👥</span>
+                                        <span>Strong Student Turnout</span>
+                                    </div>
+                                </div>
+                                <div class="event-highlights">
+                                    <h4>Event Highlights:</h4>
+                                    <ul>
+                                        <li>Official platform launch and mission presentation</li>
+                                        <li>Networking with community professionals and mentors</li>
+                                        <li>Interactive sessions on career development</li>
+                                        <li>Student testimonials and success stories</li>
+                                        <li>Partnership announcements and future plans</li>
+                                    </ul>
+                                </div>
+                                                            <div class="event-impact">
+                                <h4>Impact & Results:</h4>
                                 <ul>
-                                    <li>Kickoff meeting drew strong student turnout</li>
-                                    <li>Built connections with impactful mentors</li>
-                                    <li>Supported students in landing internships</li>
+                                    <li>Established connections with impactful mentors</li>
+                                    <li>Built strong foundation for student programs</li>
+                                    <li>Generated community interest and support</li>
+                                    <li>Set the stage for future events and initiatives</li>
                                 </ul>
                             </div>
+                        </div>
+                    </article>
+
+                    <div class="event-gallery fade-in">
+                        <h3>Event Photo Gallery</h3>
+                        <p>Relive the excitement and energy of our historic kickoff event through these amazing photos!</p>
+                        <div class="photo-grid">
+                            <div class="photo-item">
+                                <img src="images/events/PIC-1.jpg" alt="ElevateGen Kickoff Event - Opening Ceremony" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-2.jpg" alt="ElevateGen Kickoff Event - Team Presentation" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-3.jpg" alt="ElevateGen Kickoff Event - Student Engagement" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-4.jpg" alt="ElevateGen Kickoff Event - Networking Session" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-5.jpg" alt="ElevateGen Kickoff Event - Community Leaders" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-6.jpg" alt="ElevateGen Kickoff Event - Interactive Activities" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-7.jpg" alt="ElevateGen Kickoff Event - Student Success Stories" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-8.jpg" alt="ElevateGen Kickoff Event - Partnership Announcements" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-9.jpg" alt="ElevateGen Kickoff Event - Future Vision" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-10.jpg" alt="ElevateGen Kickoff Event - Community Celebration" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-11.jpg" alt="ElevateGen Kickoff Event - Student Leadership" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/events/PIC-12.jpg" alt="ElevateGen Kickoff Event - Professional Development" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="gallery-cta">
+                            <p>📸 <strong>100+ Photos Captured!</strong> The kickoff event was a massive success with incredible community turnout and engagement.</p>
+                            <button class="cta-button" onclick="loadMorePhotos()">Load More Photos</button>
+                        </div>
+                    </div>
+
+
+                    </div>
+
+                    <div class="events-cta fade-in">
+                        <h3>Get Involved in Our Events</h3>
+                        <p>Stay updated with upcoming events and opportunities to grow with ElevateGen</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="cta-button" onclick="showPage('contact')">Join Our Events</a>
+                            <a href="mailto:info@elevategen.org" class="cta-button secondary">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -751,11 +385,11 @@
                     <div class="team-grid">
                         <div class="team-member fade-in">
                             <div class="member-photo">
-                                <img src="images/saisri.jpg" alt="Saisri Akarapu" class="team-photo">
+                                <img src="images/saisri.jpg" alt="Saisri Akarapu - President of ElevateGen" class="team-photo">
                             </div>
-                            <h3>Saisri Akarapu </h3>
+                            <h3>Saisri Akarapu</h3>
                             <p class="role">President</p>
-                            <p>Hey! I'm Siri and I'm your Elevate Gen president! In my free time I enjoy playing badminton and listening to Drake. Very excited for what's yet to come! </p>
+                            <p>Hey! I'm Siri and I'm your Elevate Gen president! In my free time I enjoy playing badminton and listening to Drake. Very excited for what's yet to come!</p>
                         </div>
                         <div class="team-member fade-in">
                             <div class="member-photo">
@@ -795,7 +429,7 @@
                             </div>
                             <h3>Jaytirth Joshi </h3>
                             <p class="role">CEO at HealthSathi</p>
-                            <p> My name is Jaytirth Joshi, a high school entrepreneur who uses AI to solve real-world problems. I founded HealthSathi, an award-winning platform that helps anyone understand confusing medical reports. Having lived in India, China, and the US, I bring a global perspective to building technology that makes a difference. </p>
+                            <p>High school entrepreneur passionate about leveraging AI to solve real-world challenges. As founder and CEO of HealthSathi, I've built an award-winning platform that democratizes healthcare by making complex medical reports accessible to everyone. My international experience across India, China, and the US fuels my mission to create technology that truly makes a difference in people's lives.</p>
                         </div>
                         <div class="team-member fade-in">
                             <div class="member-photo">
@@ -814,6 +448,93 @@
                             <p> I'm am a college student majoring in Cell and Molecular Biology with a strong passion for science, service, and leadership. I'm deeply connected to my South Indian roots and always looking for ways to make a meaningful impact in both my community and future career.</p>
                         </div>
                     </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Press Page -->
+        <div id="press-page" class="page" style="display: none;">
+            <section class="hero-small">
+                <div class="hero-content">
+                    <h2>Press & Media</h2>
+                    <p>Stay updated with the latest news and media coverage about ElevateGen</p>
+                </div>
+            </section>
+
+            <section class="press-content">
+                <div class="container">
+                    <div class="press-contact-section fade-in">
+                        <h3>Press & Media Inquiries</h3>
+                        <p>For press releases, media interviews, or partnership opportunities, please contact our media team.</p>
+                        <div class="press-contact-info">
+                            <a href="mailto:info@elevategen.org" class="press-contact-button">
+                                📧 info@elevategen.org
+                            </a>
+                        </div>
+                    </div>
+
+                    <h2>Media Coverage</h2>
+                    <div class="press-grid">
+                        <article class="press-item fade-in">
+                            <div class="press-meta">
+                                <span class="press-date">July 1, 2025</span>
+                                <span class="press-source">MANA TV</span>
+                            </div>
+                            <h3>Elevate Gen || HIGH SCHOOL STUDENTS || MANA TV #students</h3>
+                            <p class="press-excerpt">Watch ElevateGen's feature on MANA TV, showcasing how high school students are leading the way in community development and youth empowerment through innovative programs and mentorship opportunities.</p>
+                            <div class="press-actions">
+                                <a href="https://www.youtube.com/watch?v=UfLrmZFdfu8" target="_blank" rel="noopener noreferrer" class="cta-button">Watch on YouTube</a>
+                            </div>
+                        </article>
+
+                        <article class="press-item fade-in">
+                            <div class="press-meta">
+                                <span class="press-date">July 1, 2025</span>
+                                <span class="press-source">TV5 Digital</span>
+                            </div>
+                            <h3>Elevate Gen || HIGH SCHOOL STUDENTS | TV5 Digital</h3>
+                            <p class="press-excerpt">Discover how ElevateGen is revolutionizing student leadership and career development on TV5 Digital, featuring interviews with our student leaders and insights into our mission to empower the next generation.</p>
+                            <div class="press-actions">
+                                <a href="https://www.youtube.com/watch?v=wBVNJO_3jgc" target="_blank" rel="noopener noreferrer" class="cta-button">Watch on YouTube</a>
+                            </div>
+                        </article>
+
+                        <article class="press-item fade-in">
+                            <div class="press-meta">
+                                <span class="press-date">June 29, 2025</span>
+                                <span class="press-source">NRI Pulse</span>
+                            </div>
+                            <h3>Student-Led Platform ElevateGen Launched to Empower Future Leaders in Forsyth County</h3>
+                            <p class="press-excerpt">A dynamic new student-led initiative, ElevateGen, has launched in Forsyth County with the goal of helping students turn ambition into action. Created by a group of young leaders in partnership with Idealogy Media, ElevateGen is a platform designed to bridge the gap between education and real-world experience for high school and college students, as well as early-career seekers.</p>
+                            <div class="press-actions">
+                                <a href="https://nripulse.com/student-led-platform-elevategen-launched-to-empower-future-leaders-in-forsyth-county/#google_vignette" target="_blank" rel="noopener noreferrer" class="cta-button">Read Full Article</a>
+                            </div>
+                        </article>
+
+                        <article class="press-item fade-in">
+                            <div class="press-meta">
+                                <span class="press-date">June 29, 2025</span>
+                                <span class="press-source">Atlanta Dunia</span>
+                            </div>
+                            <h3>Career GPS: How ElevateGen Helps Students Navigate What's Next</h3>
+                            <p class="press-excerpt">A group of young leaders in Forsyth County have started ElevateGen, a new student-led platform designed to assist high school students, college students, and early career seekers in developing professional skills, exploring career paths, and gaining real-world experience in an era where students are expected to navigate their future without the necessary tools or experience.</p>
+                            <div class="press-actions">
+                                <a href="https://atlantadunia.com/dunia/Newsdetail.aspx?q=1504" target="_blank" rel="noopener noreferrer" class="cta-button">Read Full Article</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="social-media-section fade-in">
+                        <h3>Follow Our Journey</h3>
+                        <p>Stay connected with ElevateGen on social media for the latest updates, events, and opportunities.</p>
+                        <div class="social-media-links">
+                            <a href="https://www.instagram.com/elevate_gen/" target="_blank" rel="noopener noreferrer" class="social-media-button instagram">
+                                📷 Follow @elevate_gen on Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
                 </div>
             </section>
         </div>
@@ -903,15 +624,20 @@
         <div class="container">
             <div class="footer-content">
                 <div>
-                    <p>&copy; 2025 ElevateGen. All rights reserved.</p>
+                    <p>&copy; 2025 <a href="https://elevategen.org" style="color: white; text-decoration: none;">ElevateGen.org</a>. All rights reserved.</p>
                     <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Empowering communities, creating lasting change.</p>
+                    <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.6;">Student-led platform in Forsyth County, Georgia</p>
                 </div>
                 <div class="social-links">
                     <a href="#" title="Facebook">📘</a>
                     <a href="#" title="Twitter">🐦</a>
-                    <a href="#" title="Instagram">📷</a>
+                    <a href="https://www.instagram.com/elevate_gen/" target="_blank" rel="noopener noreferrer" title="Instagram">📷</a>
                     <a href="#" title="LinkedIn">💼</a>
                     <a href="mailto:info@elevategen.org" title="Email">✉️</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#events" onclick="showPage('events')" title="Events & Activities">Events</a>
+                    <a href="#press" onclick="showPage('press')" title="Press & Media">Press</a>
                 </div>
             </div>
         </div>
@@ -924,6 +650,8 @@
             'home': document.querySelector('#home-page'),
             'about': document.querySelector('#about-page'),
             'team': document.querySelector('#team-page'),
+            'events': document.querySelector('#events-page'),
+            'press': document.querySelector('#press-page'),
             'contact': document.querySelector('#contact-page')
         };
 
@@ -993,17 +721,23 @@
                 const header = document.querySelector('header');
                 const currentScrollY = window.scrollY;
                 
-                if (currentScrollY > 100) {
-                    header.style.background = 'rgba(0, 0, 0, 0.9)';
+                if (currentScrollY > 50) {
+                    header.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(30, 64, 175, 0.98))';
+                    header.style.backdropFilter = 'blur(20px)';
+                    header.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.2)';
                 } else {
-                    header.style.background = 'rgba(255, 255, 255, 0.1)';
+                    header.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(30, 64, 175, 0.95))';
+                    header.style.backdropFilter = 'blur(15px)';
+                    header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
                 }
                 
-                // Hide/show header on scroll
-                if (currentScrollY > lastScrollY && currentScrollY > 200) {
+                // Hide/show header on scroll (gentler behavior)
+                if (currentScrollY > lastScrollY && currentScrollY > 300) {
                     header.style.transform = 'translateY(-100%)';
+                    header.style.opacity = '0.95';
                 } else {
                     header.style.transform = 'translateY(0)';
+                    header.style.opacity = '1';
                 }
                 
                 lastScrollY = currentScrollY;
@@ -1121,6 +855,14 @@
                             break;
                         case '4':
                             e.preventDefault();
+                            showPage('events');
+                            break;
+                        case '5':
+                            e.preventDefault();
+                            showPage('press');
+                            break;
+                        case '6':
+                            e.preventDefault();
                             showPage('contact');
                             break;
                     }
@@ -1183,7 +925,7 @@
             }, 500);
 
             // Console welcome message
-            console.log(`
+            console.log('🌟 ElevateGen website loaded successfully! 🌟');
         });
 
         // Utility functions
@@ -1230,6 +972,52 @@
         window.addEventListener('error', function(e) {
             console.warn('Non-critical error caught:', e.message);
         });
+
+        // Load more photos function
+        function loadMorePhotos() {
+            const photoGrid = document.querySelector('.photo-grid');
+            const currentPhotos = photoGrid.children.length;
+            const totalPhotos = 100;
+            
+            if (currentPhotos >= totalPhotos) {
+                alert('All photos are already loaded!');
+                return;
+            }
+            
+            // Load next batch of photos (12 more)
+            const photosToLoad = Math.min(12, totalPhotos - currentPhotos);
+            const startIndex = currentPhotos + 1;
+            
+            for (let i = startIndex; i <= startIndex + photosToLoad - 1; i++) {
+                if (i <= totalPhotos) {
+                    const photoItem = document.createElement('div');
+                    photoItem.className = 'photo-item fade-in';
+                    photoItem.innerHTML = `
+                        <img src="images/events/PIC-${i}.jpg" alt="ElevateGen Kickoff Event - Photo ${i}" loading="lazy">
+                    `;
+                    photoGrid.appendChild(photoItem);
+                }
+            }
+            
+            // Update button text
+            const loadButton = document.querySelector('.gallery-cta .cta-button');
+            if (currentPhotos + photosToLoad >= totalPhotos) {
+                loadButton.textContent = 'All Photos Loaded';
+                loadButton.disabled = true;
+            } else {
+                loadButton.textContent = `Load More Photos (${totalPhotos - (currentPhotos + photosToLoad)} remaining)`;
+            }
+            
+            // Trigger fade-in animation for new photos
+            setTimeout(() => {
+                const newPhotos = photoGrid.querySelectorAll('.photo-item:not(.visible)');
+                newPhotos.forEach((photo, index) => {
+                    setTimeout(() => {
+                        photo.classList.add('visible');
+                    }, index * 100);
+                });
+            }, 100);
+        }
     </script>
 </body>
 </html>
