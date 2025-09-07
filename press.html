@@ -21,6 +21,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="team.html">Our Team</a></li>
                     <li><a href="events.html">Events</a></li>
+                    <li><a href="volunteers.html">Volunteers</a></li>
                     <li><a href="press.html" class="active">Press</a></li>
                     <li><a href="sponsors.html">Sponsors</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -119,25 +120,19 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://www.instagram.com/elevate_gen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-                </div>
-                <div class="footer-links">
-                    <a href="about.html">About</a>
-                    <a href="team.html">Team</a>
-                    <a href="events.html">Events</a>
-                    <a href="press.html">Press</a>
-                    <a href="sponsors.html">Sponsors</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <p>© 2025 ElevateGen. All rights reserved.</p>
-                <p>Empowering communities, creating lasting change.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const footerContainer = document.getElementById('site-footer');
+            if (footerContainer) {
+                fetch('footer.html')
+                    .then(function(response) { return response.text(); })
+                    .then(function(html) { footerContainer.innerHTML = html; })
+                    .catch(function(error) { console.error('Failed to load footer:', error); });
+            }
+        });
+    </script>
 
     <script>
         // Mobile menu toggle
