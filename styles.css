@@ -479,12 +479,12 @@ h2 {
     padding: 2rem;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
+    color: #333;
     text-align: left;
 }
 
 .team-stats h3 {
-    color: white;
+    color: #1e40af;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
     text-align: center;
@@ -499,6 +499,7 @@ h2 {
 .team-stats ul li {
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    color: #555;
     position: relative;
     padding-left: 2rem;
     line-height: 1.6;
@@ -810,14 +811,17 @@ h2 {
 }
 
 .cta-button.secondary {
-    background: rgba(255, 255, 255, 0.2);
-    color: #1e40af;
-    border: 2px solid #3b82f6;
+    background: #3b82f6;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
 }
 
 .cta-button.secondary:hover {
-    background: #3b82f6;
-    color: white;
+    background: #2563eb;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.35);
 }
 
 /* Event Photo Gallery */
