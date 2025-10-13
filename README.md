@@ -4,7 +4,7 @@
 
 ElevateGen is a student-led platform that empowers high school and college students in Forsyth County, Georgia, to build their futures through internships, mentorships, and career development opportunities. We bridge the gap between students' career aspirations and the practical steps needed to achieve them.
 
-## 🌟 Mission
+## Mission
 
 We believe that every student deserves access to the tools and connections they need to succeed. Through our platform, we're building a community where students can:
 - Learn from each other
@@ -12,7 +12,7 @@ We believe that every student deserves access to the tools and connections they 
 - Discover opportunities aligned with their passions and goals
 - Gain real-world experience through internships
 
-## 🚀 Features
+## Features
 
 - **Internship Opportunities**: Connect students with real-world internship experiences
 - **Mentorship Programs**: Professional guidance and career development support
@@ -20,7 +20,7 @@ We believe that every student deserves access to the tools and connections they 
 - **Student Networking**: Build connections with peers and professionals
 - **Community Events**: Regular meetups and professional development sessions
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 elevategen-website/
@@ -42,7 +42,7 @@ elevategen-website/
 └── README.md          # This file
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5**: Semantic markup with modern standards
 - **CSS3**: Custom styling with advanced features
@@ -61,7 +61,7 @@ elevategen-website/
   - Semantic HTML
   - Performance optimizations
 
-## 🎨 Design Features
+## Design Features
 
 - **Responsive Design**: Mobile-first approach with breakpoints for all devices
 - **Modern UI/UX**: Clean, professional design with intuitive navigation
@@ -69,16 +69,16 @@ elevategen-website/
 - **Performance**: Optimized images, efficient CSS, and minimal JavaScript
 - **SEO-Friendly**: Comprehensive meta tags and structured data
 
-## 🌐 Live Website
+## Live Website
 
 Visit our website at: [https://elevategen.org](https://elevategen.org)
 
-## 📱 Social Media
+## Social Media
 
 - Instagram: [@elevate_gen](https://www.instagram.com/elevate_gen/)
 - GroupMe: [Join our community](https://groupme.com/join_group/108128461/jebdqm5z)
 
-## 🤝 Getting Involved
+## Getting Involved
 
 ### For Students
 - Join our GroupMe community
@@ -120,7 +120,7 @@ We welcome contributions from the community! Please feel free to:
 - Edge (latest)
 - Mobile browsers
 
-## 📈 Impact
+## Impact
 
 Since our founding in 2025, ElevateGen has:
 - Successfully organized kickoff meetings with strong student turnout
